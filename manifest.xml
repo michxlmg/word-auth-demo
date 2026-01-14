@@ -17,21 +17,21 @@
   
   <!-- Icon for the Add-in (Using a placeholder URL or default Office icon) -->
   <!-- Note: In production these should be hosted images. For now we use standard requirements. -->
-  <IconUrl DefaultValue="https://localhost:3000/assets/icon-32.png" />
-  <HighResolutionIconUrl DefaultValue="https://localhost:3000/assets/icon-64.png" />
+  <IconUrl DefaultValue="https://michxlmg.github.io/word-auth-demo/assets/logo.png" />
+  <HighResolutionIconUrl DefaultValue="https://michxlmg.github.io/word-auth-demo/assets/logo.png" />
   <SupportUrl DefaultValue="https://www.contoso.com/help" />
   <AppDomains>
-    <AppDomain>https://localhost:3000</AppDomain>
+    <AppDomain>https://michxlmg.github.io/word-auth-demo</AppDomain>
   </AppDomains>
 
   <!-- Hosts -->
   <Hosts>
-    <Host Name="Document" />
+    <Host Name="Document" />  
   </Hosts>
 
   <!-- Default Settings -->
   <DefaultSettings>
-    <SourceLocation DefaultValue="https://localhost:3000/index.html" />
+    <SourceLocation DefaultValue="https://michxlmg.github.io/word-auth-demo/index.html" />
   </DefaultSettings>
 
   <!-- Permissions -->
@@ -88,14 +88,14 @@
     <!-- Resources -->
     <Resources>
       <bt:Images>
-        <bt:Image id="Contoso.tpicon_16" DefaultValue="https://localhost:3000/assets/icon-16.png" />
-        <bt:Image id="Contoso.tpicon_32" DefaultValue="https://localhost:3000/assets/icon-32.png" />
-        <bt:Image id="Contoso.tpicon_80" DefaultValue="https://localhost:3000/assets/icon-80.png" />
+        <bt:Image id="Contoso.tpicon_16" DefaultValue="https://michxlmg.github.io/word-auth-demo/assets/logo.png" />
+        <bt:Image id="Contoso.tpicon_32" DefaultValue="https://michxlmg.github.io/word-auth-demo/assets/logo.png" />
+        <bt:Image id="Contoso.tpicon_80" DefaultValue="https://michxlmg.github.io/word-auth-demo/assets/logo.png" />
       </bt:Images>
       <bt:Urls>
         <bt:Url id="GetStarted.LearnMoreUrl" DefaultValue="https://go.microsoft.com/fwlink/?LinkId=276812" />
-        <bt:Url id="Contoso.DesktopFunctionFile.Url" DefaultValue="https://localhost:3000/function-file/function-file.html" />
-        <bt:Url id="Contoso.Taskpane.Url" DefaultValue="https://localhost:3000/index.html" />
+        <bt:Url id="Contoso.DesktopFunctionFile.Url" DefaultValue="https://michxlmg.github.io/word-auth-demo/function-file/function-file.html" />
+        <bt:Url id="Contoso.Taskpane.Url" DefaultValue="https://michxlmg.github.io/word-auth-demo/index.html" />
       </bt:Urls>
       <bt:ShortStrings>
         <bt:String id="GetStarted.Title" DefaultValue="Empezar ahora" />
