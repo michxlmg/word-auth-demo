@@ -1,0 +1,199 @@
+/* Resets basicos */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    /* Paleta de colores Corporativa Sobria */
+    --primary: #0078d4; /* Microsoft Blue */
+    --primary-hover: #005a9e;
+    --text-primary: #323130;
+    --text-secondary: #605e5c;
+    --bg-color: #ffffff;
+    --input-border: #8a8886;
+    --input-focus: #0078d4;
+    --error: #a80000;
+    --success: #107c10;
+    
+    /* Espaciado estándar Office UI Fabric */
+    --spacing-xs: 4px;
+    --spacing-s: 8px;
+    --spacing-m: 16px;
+    --spacing-l: 24px;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-primary);
+    font-size: 14px;
+    line-height: 1.5;
+    /* La fuente se define inline en HTML para fallback, pero aquí reforzamos */
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.container {
+    width: 100%;
+    max-width: 400px; /* Un poco mas para escritorio, pero se adapta al iframe */
+    padding: var(--spacing-m);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* ==================
+   UTILITIES
+   ================== */
+.hidden {
+    display: none !important;
+}
+
+.view {
+    animation: fadeIn 0.3s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(5px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* ==================
+   TYPOGRAPHY
+   ================== */
+h1 {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: var(--spacing-xs);
+    color: var(--text-primary);
+}
+
+.subtitle {
+    font-size: 14px;
+    color: var(--text-secondary);
+    margin-bottom: var(--spacing-l);
+}
+
+.header {
+    margin-bottom: var(--spacing-l);
+}
+
+/* ==================
+   FORMS
+   ================== */
+.input-group {
+    margin-bottom: var(--spacing-m);
+    text-align: left;
+}
+
+label {
+    display: block;
+    margin-bottom: var(--spacing-xs);
+    font-weight: 600;
+    color: var(--text-primary);
+}
+
+input {
+    width: 100%;
+    padding: 8px 12px;
+    border: 1px solid var(--input-border);
+    border-radius: 2px; /* Estilo Office: bordes sutilmente redondeados */
+    font-size: 14px;
+    outline: none;
+    transition: border-color 0.2s;
+}
+
+input:focus {
+    border-color: var(--input-focus);
+    box-shadow: 0 0 0 1px var(--input-focus); /* Focus ring style */
+}
+
+/* ==================
+   BUTTONS & LINKS
+   ================== */
+.actions {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: var(--spacing-m);
+}
+
+a {
+    color: var(--primary);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.link-small {
+    font-size: 12px;
+}
+
+.link-back {
+    display: inline-block;
+    margin-top: var(--spacing-m);
+    font-size: 14px;
+}
+
+.submit-wrapper {
+    position: relative;
+    margin-top: var(--spacing-l);
+}
+
+.btn-primary {
+    width: 100%;
+    background-color: var(--primary);
+    color: white;
+    border: none;
+    padding: 10px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    border-radius: 2px;
+    transition: background-color 0.2s;
+}
+
+.btn-primary:hover {
+    background-color: var(--primary-hover);
+}
+
+.btn-primary:disabled {
+    background-color: #c8c6c4;
+    cursor: not-allowed;
+}
+
+/* ==================
+   LOADER
+   ================== */
+.loader {
+    width: 16px;
+    height: 16px;
+    border: 2px solid #ffffff;
+    border-bottom-color: transparent;
+    border-radius: 50%;
+    display: inline-block;
+    box-sizing: border-box;
+    animation: rotation 1s linear infinite;
+    
+    /* Position absolutly over the button text or beside it */
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    transform: translateY(-50%);
+}
+
+@keyframes rotation {
+    0% { transform: translateY(-50%) rotate(0deg); }
+    100% { transform: translateY(-50%) rotate(360deg); }
+}
+
+.footer-links {
+    margin-top: 30px;
+    text-align: center;
+    font-size: 13px;
+    color: var(--text-secondary);
+}
