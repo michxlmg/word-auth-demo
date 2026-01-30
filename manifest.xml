@@ -12,16 +12,16 @@
   <Version>1.0.0.0</Version>
   <ProviderName>Katsu Dev</ProviderName>
   <DefaultLocale>es-ES</DefaultLocale>
-  <DisplayName DefaultValue="Auth Demo Pane" />
-  <Description DefaultValue="Demo de autenticación corporativa para Word." />
+  <DisplayName DefaultValue="Arxatec" />
+  <Description DefaultValue="Plataforma legal inteligente para Word." />
   
   <!-- Icon for the Add-in (Using a placeholder URL or default Office icon) -->
   <!-- Note: In production these should be hosted images. For now we use standard requirements. -->
-  <IconUrl DefaultValue="https://michxlmg.github.io/word-auth-demo/assets/logo.png" />
-  <HighResolutionIconUrl DefaultValue="https://michxlmg.github.io/word-auth-demo/assets/logo.png" />
+  <IconUrl DefaultValue="https://arxatec-ins.vercel.app/assets/logo2.png" />
+  <HighResolutionIconUrl DefaultValue="https://arxatec-ins.vercel.app/assets/logo2.png" />
   <SupportUrl DefaultValue="https://www.contoso.com/help" />
   <AppDomains>
-    <AppDomain>https://michxlmg.github.io/word-auth-demo</AppDomain>
+    <AppDomain>https://arxatec-ins.vercel.app</AppDomain>
   </AppDomains>
 
   <!-- Hosts -->
@@ -31,7 +31,7 @@
 
   <!-- Default Settings -->
   <DefaultSettings>
-    <SourceLocation DefaultValue="https://michxlmg.github.io/word-auth-demo/index.html" />
+    <SourceLocation DefaultValue="https://arxatec-ins.vercel.app/index.html" />
   </DefaultSettings>
 
   <!-- Permissions -->
@@ -88,20 +88,20 @@
     <!-- Resources -->
     <Resources>
       <bt:Images>
-        <bt:Image id="Contoso.tpicon_16" DefaultValue="https://michxlmg.github.io/word-auth-demo/assets/logo.png" />
-        <bt:Image id="Contoso.tpicon_32" DefaultValue="https://michxlmg.github.io/word-auth-demo/assets/logo.png" />
-        <bt:Image id="Contoso.tpicon_80" DefaultValue="https://michxlmg.github.io/word-auth-demo/assets/logo.png" />
+        <bt:Image id="Contoso.tpicon_16" DefaultValue="https://arxatec-ins.vercel.app/assets/logo2.png" />
+        <bt:Image id="Contoso.tpicon_32" DefaultValue="https://arxatec-ins.vercel.app/assets/logo2.png" />
+        <bt:Image id="Contoso.tpicon_80" DefaultValue="https://arxatec-ins.vercel.app/assets/logo2.png" />
       </bt:Images>
       <bt:Urls>
         <bt:Url id="GetStarted.LearnMoreUrl" DefaultValue="https://go.microsoft.com/fwlink/?LinkId=276812" />
-        <bt:Url id="Contoso.DesktopFunctionFile.Url" DefaultValue="https://michxlmg.github.io/word-auth-demo/function-file/function-file.html" />
-        <bt:Url id="Contoso.Taskpane.Url" DefaultValue="https://michxlmg.github.io/word-auth-demo/index.html" />
+        <bt:Url id="Contoso.DesktopFunctionFile.Url" DefaultValue="https://arxatec-ins.vercel.app/function-file/function-file.html" />
+        <bt:Url id="Contoso.Taskpane.Url" DefaultValue="https://arxatec-ins.vercel.app/index.html" />
       </bt:Urls>
       <bt:ShortStrings>
         <bt:String id="GetStarted.Title" DefaultValue="Empezar ahora" />
         <bt:String id="Contoso.Group1Label" DefaultValue="Demo Auth" />
-        <bt:String id="Contoso.TaskpaneButton.Label" DefaultValue="Abrir Panel Auth" />
-        <bt:String id="Contoso.Tab1.Label" DefaultValue="Auth Demo" />
+        <bt:String id="Contoso.TaskpaneButton.Label" DefaultValue="Abrir Arxatec" />
+        <bt:String id="Contoso.Tab1.Label" DefaultValue="Arxatec" />
       </bt:ShortStrings>
       <bt:LongStrings>
         <bt:String id="GetStarted.Description" DefaultValue="Abre el panel para ver la demo de autenticación." />
